@@ -5,7 +5,7 @@ echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | 
 sudo apt-get update
 sudo apt-get install -y mongodb-10gen
 
-#enable text search otherwise `bundle exec rake errbit:bootstrap` fails
+#enable text search otherwise `bundle exec rake errbit:bootstrap` for errbit fails
 #http://stackoverflow.com/a/23624139/120427
 echo "setParameter=textSearchEnabled=true" | sudo tee -a /etc/mongodb.conf > /dev/null
 
