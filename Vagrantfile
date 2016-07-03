@@ -18,6 +18,7 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", path: "ruby.sh", privileged: false
   config.vm.provision "shell", path: "git.sh"
   config.vm.provision "shell", path: "errbit.sh", privileged: false
+  config.vm.provision "shell", path: "nginx.sh"
 
   config.vm.box_check_update = false
 
